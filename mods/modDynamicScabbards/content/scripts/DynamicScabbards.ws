@@ -130,7 +130,7 @@ class DynamicScabbards
             case DS_Set_Wolf:              return 'scabbard_steel_wolf_01';
             case DS_Set_Viper:             return 'scabbard_steel_1_02';
             case DS_Set_ForgottenWolf:     return 'scabbard_steel_netflix_01';
-            case DS_Set_DolBlathanna:      return 'scabbard_steel_3_07';
+            case DS_Set_DolBlathanna:      return 'scabbard_steel_dol_blathanna';
             default:                       return '';
         }
     }
@@ -147,7 +147,7 @@ class DynamicScabbards
             case DS_Set_Wolf:              return 'scabbard_silver_wolf_01';
             case DS_Set_Viper:             return 'scabbard_silver_1_05';
             case DS_Set_ForgottenWolf:     return 'scabbard_silver_netflix_01';
-            case DS_Set_DolBlathanna:      return 'scabbard_silver_3_07';
+            case DS_Set_DolBlathanna:      return 'scabbard_silver_dol_blathanna';
             default:                       return '';
         }
     }
