@@ -9,7 +9,8 @@ enum DSSchoolSet
     DS_Set_Manticore = 5,
     DS_Set_Wolf = 6,
     DS_Set_Viper = 7,
-    DS_Set_ForgottenWolf = 8
+    DS_Set_ForgottenWolf = 8,
+    DS_Set_DolBlathanna = 9,
 }
 
 class DynamicScabbards
@@ -129,6 +130,7 @@ class DynamicScabbards
             case DS_Set_Wolf:              return 'scabbard_steel_wolf_01';
             case DS_Set_Viper:             return 'scabbard_steel_1_02';
             case DS_Set_ForgottenWolf:     return 'scabbard_steel_netflix_01';
+            case DS_Set_DolBlathanna:      return 'scabbard_steel_3_07';
             default:                       return '';
         }
     }
@@ -145,6 +147,7 @@ class DynamicScabbards
             case DS_Set_Wolf:              return 'scabbard_silver_wolf_01';
             case DS_Set_Viper:             return 'scabbard_silver_1_05';
             case DS_Set_ForgottenWolf:     return 'scabbard_silver_netflix_01';
+            case DS_Set_DolBlathanna:      return 'scabbard_silver_3_07';
             default:                       return '';
         }
     }
@@ -301,6 +304,7 @@ class DynamicScabbards
         if (MatchesSchool(armor, gloves, pants, boots, "Wolf"))          { school = DS_Set_Wolf;           return true;}
         if (MatchesSchool(armor, gloves, pants, boots, "EP1 Witcher"))   { school = DS_Set_Viper;          return true;}
         if (MatchesSchool(armor, gloves, pants, boots, "Netflix"))       { school = DS_Set_ForgottenWolf;  return true;}
+        if (MatchesSchool(armor, gloves, pants, boots, "Dol Blathanna")) { school = DS_Set_DolBlathanna;   return true;}
 
         // Built-in compatibility for Witcher School Set Rework and Balance mod
         if (MatchesSchool(armor, gloves, pants, boots, "Kaer Morhen"))   { school = DS_Set_KaerMorhen;     return true;}
